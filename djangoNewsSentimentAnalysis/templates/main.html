@@ -1,0 +1,104 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEWS SENTIMENT Analysis</title>
+
+    <style>
+        .background-container {
+            background-image: url("{% static 'NewsApp/NewsImage.jpg' %}"); /* Change this to the path of your background image */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            /* Adjust the blur radius as needed */
+            position: fixed;
+            width: 100%;
+            z-index: -1; /* Make sure the background is behind everything else */
+            filter: blur(1px);
+            top: 0;
+            left: 0;
+        }
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            z-index: 1;
+            color: white;
+        }
+        .content h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        .container {
+            padding: 20px;
+        }
+        .sake {
+            color: rgb(6, 35, 26);
+            font-size: 40px;
+        }
+        .form-control {
+            background-color: rgb(29, 35, 50); /* Remove background color */
+            color: white; /* Set the text color to white */
+            width: 100%;
+            height: 100px;
+        }
+        .form-control:hover {
+            background-color: rgb(29, 35, 50); /* Remove background color */
+            color: white; /* Set the text color to white */
+        }
+        .content_1 {
+            position: absolute;
+            top: 20px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            z-index: 2;
+        }
+        .container_1 {
+            padding: 20px;
+            color: black;
+        }
+        .container_1 h1 {
+            font-size: 2em;
+        }
+        .container_1 p {
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body>
+    {% if sentiment %}
+    <div class="content_1">
+        <div class="container_1">
+            <h1>Result of Sentiment Analysis</h1>
+            <p>The sentiment of the provided news is: <span style="color: black; font-size: 30px;"><strong>{{ sentiment }}</strong></span></p>
+        </div>
+    </div>
+    {% endif %}
+
+    <div class="background-container"></div>
+    
+    <div class="content">
+        <div class="container">
+           <!-- <h1 class="sake">Welcome to News Sentiment Analysis</h1> -->
+            <form action="" method="POST">
+                {% csrf_token %}
+                <div class="form-group">
+                    <label for="news">Enter the news:</label>
+                    <textarea class="form-control" id="news" name="news" rows="5" placeholder="Enter the news here..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+
