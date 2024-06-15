@@ -26,8 +26,7 @@ The News Sentiment Analysis project involves building a machine learning model t
 
 Here is a short demo of the deployed web application.
 
-https://github.com/SanKolisetty/AI-Image-Classifier/assets/95172001/0ebe3ffb-4afe-4a7b-96d3-80ce5e7ce99f
-
+(./demo.mp4)
 # Installation
 [(Back to top)](#table-of-contents)
 
