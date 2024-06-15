@@ -39,11 +39,6 @@ Open Git Bash and change the directory to the location where the repository is t
 ```shell
   git clone https://github.com/anuj120377/News-Sentiment-Analysis.git
 ```
-Now, install the requirements using the following command.
-
-```shell
-   pip install -r requirements.txt 
-```
 
 Now, Navigate into the project directory
 ```shell
@@ -53,7 +48,7 @@ Again,
 ```shell
   cd djangoNewsSentimentAnalysis
 ```
-To access or use the application, open a terminal in the cloned repository folder and run the following command.
+To access or use the application, run the following command.
 
 ```shell
 python manage.py runserver
