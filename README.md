@@ -26,7 +26,8 @@ The News Sentiment Analysis project involves building a machine learning model t
 
 Here is a short demo of the deployed web application.
 
-[![Watch the demo video](https://example.com/path/to/thumbnail.jpg)](https://github.com/anuj120377/News-Sentiment-Analysis/blob/main/demo.mp4)
+[![Watch the demo video](https://example.com/path/to/thumbnail.jpg)](
+https://github.com/anuj120377/News-Sentiment-Analysis/assets/155840334/1ce3477b-99a7-4b11-98e0-3f945dc7d1c0)
 
 
 # Installation
