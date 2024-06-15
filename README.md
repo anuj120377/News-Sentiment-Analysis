@@ -87,9 +87,4 @@ Confusion Matrix:
 ![image](./confusion_matrix.png)
 
 
-# Deployment
-[(Back to top)](#table-of-contents)
 
-The application has been deployed in the Streamlit Cloud.
-
-You can access it here: [https://ai-image-classifier-sk.streamlit.app/](https://ai-image-classifier-sk.streamlit.app/)
