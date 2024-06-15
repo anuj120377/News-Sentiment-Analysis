@@ -14,7 +14,6 @@ News Sentiment Analysis is a machine learning model that can effectively classif
 - [Data Sources](#data-sources)
 - [Model](#model)
 - [Testing and Evaluation](#testing-and-evaluation)
-- [Deployment](#deployment)
 
 # Brief Overview
 [(Back to top)](#table-of-contents)
