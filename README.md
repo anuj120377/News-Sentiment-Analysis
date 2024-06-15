@@ -44,12 +44,23 @@ Now, install the requirements using the following command.
 ```shell
    pip install -r requirements.txt 
 ```
+
+Now, Navigate into the project directory
+```shell
+  cd News-Sentiment-Analysis
+```
+Again,
+```shell
+  cd djangoNewsSentimentAnalysis
+```
 To access or use the application, open a terminal in the cloned repository folder and run the following command.
 
 ```shell
-  streamlit run deploy.py
+python manage.py runserver
 ```
-Finally, browse the link provided in your browser.
+Finally,
+Open your web browser and go to http://localhost:8000/ to view the News Sentiment Analysis application.
+
 
 # Data Sources
 [(Back to top)](#table-of-contents)
